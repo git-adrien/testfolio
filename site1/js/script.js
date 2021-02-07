@@ -21,7 +21,7 @@ document.addEventListener("mouseover", function( event ){
     }
 })
 
-document.addEventListener('click', function( event ){
+/*document.addEventListener('click', function( event ){
     cursor.classList.add("cursor_click");
     imgCursor = event.target.classList.contains('hovermouseproject')
     if(imgCursor){
@@ -30,7 +30,7 @@ document.addEventListener('click', function( event ){
     setTimeout(() => {
         cursor.classList.remove("cursor_click");
     }, 200)
-})
+})*/
 
 
 window.addEventListener('load',function(){
