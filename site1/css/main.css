@@ -260,20 +260,23 @@ footer > div:first-child{
 /**Custom cursor**/
 
 .cursor {
-
+  width: 25px;
+  height: 25px;
+  border: 1px solid #c8dff7;
+  border-radius: 50%;
   position: absolute;
   transition-duration: 100ms;
   transition-timing-function: ease-out;
   pointer-events: none;
-
 }
 
 .expand {
-  animation: cursorUpScale 200ms forwards;
+  animation: cursorDownScale 500ms forwards;
   border: solid #8e1515 1px;
-  border-radius: 5px;
+  background: #8e1515;
   transition-duration: 400ms;
 }
+
 .imgCursor{
   height: 60vh;
   width: 25vw;
@@ -310,7 +313,7 @@ footer > div:first-child{
       transform: scale(1);
   }
   to {
-      transform: scale(-0.6);
+      transform: scale(-0.5);
   }
 }
 
@@ -414,4 +417,24 @@ footer > div:first-child{
   width: 100px;
   background-color: teal;
   transition: all 0.2s 0.7s ease-out;
+}
+
+
+
+.hero h1 span{
+  animation: 1.5s cubic-bezier(.80,.18,.26,.96) slideInFromBottom;
+}
+
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translate3d(0px, 100%, 0px);
+    color: white;
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate3d(0,0,0);
+    transition: opacity 0ms;
+    opacity: 1;
+  }
 }

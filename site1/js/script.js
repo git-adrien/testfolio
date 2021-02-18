@@ -5,15 +5,18 @@ const cursor = document.querySelector('.cursor');
 
 document.addEventListener('mousemove', e => {
     if(event.target.classList.contains('hovermouse')){
-        cursor.setAttribute("style", "top: "+(e.pageY - 15)+"px; left: "+(e.pageX - (event.toElement.clientWidth/2))+"px;width:"+event.toElement.clientWidth + "px")
+        //cursor.setAttribute("style", "top: "+(e.pageY - 15)+"px; left: "+(e.pageX - (event.toElement.clientWidth/2))+"px;width:"+event.toElement.clientWidth + "px")
+        cursor.setAttribute("style", "top: "+(e.pageY - 15)+"px; left: "+(e.pageX - 15)+"px;")
+        cursor.classList.add("expand");
     }else{
         cursor.setAttribute("style", "top: "+(e.pageY - 15)+"px; left: "+(e.pageX - 15)+"px;")
+        cursor.classList.remove("expand");
     }
     
 })
 
 document.addEventListener("mouseover", function( event ){
-    imgCursor = event.target.classList.contains('hovermouseproject')
+   imgCursor = event.target.classList.contains('hovermouseproject')
     if(imgCursor){
         cursor.classList.add("imgCursor");
     }else{
@@ -21,16 +24,16 @@ document.addEventListener("mouseover", function( event ){
     }
 })
 
-/*document.addEventListener('click', function( event ){
-    cursor.classList.add("cursor_click");
+document.addEventListener('click', function( event ){
+   /* cursor.classList.add("cursor_click");
     imgCursor = event.target.classList.contains('hovermouseproject')
     if(imgCursor){
         cursor.classList.add("loadedCursor");  
     }
     setTimeout(() => {
         cursor.classList.remove("cursor_click");
-    }, 200)
-})*/
+    }, 200)*/
+})
 
 
 window.addEventListener('load',function(){
