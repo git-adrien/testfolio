@@ -8,21 +8,23 @@
 
     <link href="./css/font/stylesheet.css" rel="stylesheet" />
     <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/locomotive-scroll.css" rel="stylesheet" />
 
+    
     
     
     <link rel="icon" type="image/png" href="./images/memojismile.png" />
     <title> Adrien Sans Pseudo</title>
 </head>
 
-<body id="home">
-
+<body id="home "  >
     <!--<div id="loader-wrapper">
         <div class="loader-section section-top">
             <h1 style="color: blueviolet;">Web <br> developer <br> From Lyon </h1>
         </div>
     </div>-->
-    <nav>
+ 
+    <nav >
         <a href="./index.html" class="hovermouse">Adrien</a>
         <div>
             <a href="./about.html" class="hovermouse">About</a>
@@ -31,49 +33,51 @@
             <a target="blank" href="https://www.notion.so/Resume-Fevre-Adrien-a7fd580ef0084b8c8c70a686d0c3e563" class="hovermouse">Resume</a>
         </div>
     </nav>
-    <section class="hero">
-        <h1>  <span>Welcome</span>      <span>to</span>  <br>  <span>My </span>    <span>Little</span>  <br>  <span>World</span>  </h1>
-        <div class="v52_5"><img src="./images/home.png" alt="Girl in a jacket"></div>
-    </section>
 
-    <section class="content">
-        <div>
-            <h2>Discover me</h2>
-        </div>
-        <div>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum faucibus urna nec imperdiet.
-                Cras sit amet iaculis risus. Aenean ac velit felis. Phasellus sit amet magna placerat, sollicitudin mauris vitae,
-                blandit ligula. Morbi efficitur vehicula arcu. Integer dignissim finibus tempor.
-                Curabitur nec diam eget elit blandit semper. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                Donec elementum justo sit amet est porttitor suscipit. Donec congue, libero eget pharetra consequat,
-                ante justo commodo risus, in ullamcorper ante diam quis leo. &#128519.
-            </p>
-        </div>
+    <div data-scroll-container>
 
-    </section>
+        <section data-scroll-section class="hero">
+            <h1 data-scroll data-scroll-speed="1" > Welcome to<br>My  Little<br> World</h1>
+            <div data-scroll data-scroll-speed="6" class="v52_5"><img src="./images/home-old.png" alt="Girl in a jacket"></div>
+        </section>
+
+        <section  data-scroll-section class="content">
+            <div data-scroll data-scroll-speed="2"  >
+                <h2>Discover me</h2>
+            </div>
+            <div data-scroll data-scroll-speed="3"  >
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum faucibus urna nec imperdiet.
+                    Cras sit amet iaculis risus. Aenean ac velit felis. Phasellus sit amet magna placerat, sollicitudin mauris vitae,
+                    blandit ligula. Morbi efficitur vehicula arcu. Integer dignissim finibus tempor.
+                    Curabitur nec diam eget elit blandit semper. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                    Donec elementum justo sit amet est porttitor suscipit. Donec congue, libero eget pharetra consequat,
+                    ante justo commodo risus, in ullamcorper ante diam quis leo. &#128519.
+                </p>
+            </div>
+        </section>
+
+        <section data-scroll-section  id="projectBG" class="projects about">
+            <a data-scroll data-scroll-speed="2" data-img="./images/IMG_0087.jpg" href="./about.html" class="hovermouseproject" >Google Analytics</a>
+            <a data-scroll data-scroll-speed="2" data-img="./images/IMG_0088.jpg" class="hovermouseproject" >Portfolio</a>
+            <a data-scroll data-scroll-speed="2" data-img="./images/IMG_0089.jpg" class="hovermouseproject" >Api Reddit</a>
+            <a data-scroll data-scroll-speed="2" data-img="./images/IMG_0090.jpg" class="hovermouseproject" >CSSBattle</a>
+        </section>
+
+        <footer data-scroll-section>
+            <div data-scroll data-scroll-speed="3" class="v91_0">Meet up soon ?</div>
+            <div data-scroll data-scroll-speed="1">
+                <a href="#" class="hovermouse">Dribble</a>
+                <a href="#" class="hovermouse">MailTo</a>
+                <a href="#" class="hovermouse">Instagram</a>
+            </div>        
+        </footer>
+    </div>
 
 
 
-    <section class="projects about">
-        <a class="hovermouseproject" >Google Analytics</a>
-        <a class="hovermouseproject" >Portfolio</a>
-        <a class="hovermouseproject" >Api Reddit</a>
-        <a class="hovermouseproject" >CSSBattle</a>
-        
-    </section>
-
-    <footer>
-        <div class="v91_0">Meet up soon ?</div>
-        <div>
-            <a href="#" class="hovermouse">Dribble</a>
-            <a href="#" class="hovermouse">MailTo</a>
-            <a href="#" class="hovermouse">Instagram</a>
-        </div>        
-    </footer>
     <div class="cursor"></div>
-
- 
+    <script src="./js/locomotive-scroll.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>

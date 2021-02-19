@@ -1,5 +1,7 @@
-
-
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+});
 
 const cursor = document.querySelector('.cursor');
 
@@ -17,30 +19,25 @@ document.addEventListener('mousemove', e => {
 
 document.addEventListener("mouseover", function( event ){
    imgCursor = event.target.classList.contains('hovermouseproject')
+    bg = this.getElementById('projectBG') ;
     if(imgCursor){
+        img = event.target.dataset.img
+        bg.style.backgroundImage = "url('"+img+"')";
+    }
+})
+
+/**
+ * document.addEventListener("mouseover", function( event ){
+   imgCursor = event.target.classList.contains('hovermouseproject')
+    bg = this.getElementById('projectBG') ;
+    if(imgCursor){
+        img = event.target.dataset.img
         cursor.classList.add("imgCursor");
+        cursor.style.backgroundImage = "url('"+img+"')";
     }else{
+        img = event.target.dataset.img
         cursor.classList.remove("imgCursor");
+        cursor.style.backgroundImage = "url('"+img+"')";
     }
 })
-
-document.addEventListener('click', function( event ){
-   /* cursor.classList.add("cursor_click");
-    imgCursor = event.target.classList.contains('hovermouseproject')
-    if(imgCursor){
-        cursor.classList.add("loadedCursor");  
-    }
-    setTimeout(() => {
-        cursor.classList.remove("cursor_click");
-    }, 200)*/
-})
-
-
-window.addEventListener('load',function(){
-    /*
-    document.querySelector('body').classList.add("loaded")  
-    document.querySelector('body').style.overflow = "hidden"
-    setTimeout(() => {
-        document.querySelector('body').style.overflow = "auto"
-    }, 2000)*/
-})
+ */
