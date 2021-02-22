@@ -6,19 +6,6 @@ body{
   color: #c8dff7;
   background: rgba(0,51,102,1);
   font-family: 'Work Sans', sans-serif;
-
-
-/*
-  color: #08111a;
-  background: #c8dff7; 
-
-  color: #c8dff7;
-  background: #08111a;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -30,6 +17,15 @@ body{
 }
 a, nav > span{
   color:#c8dff7;
+}
+
+
+#loader-wrapper{
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0,51,102,1);
+  z-index: 15;
+  position: absolute;
 }
 
 section,footer{
@@ -137,7 +133,7 @@ footer > div:first-child{
 
 .inside{
   height: 30vh;
-  margin: 10vh 5vw 10vh 5vw;
+  margin: 20vh 5vw 10vh 5vw;
 }
 
 
@@ -209,7 +205,6 @@ footer > div:first-child{
 .projects p{
   text-align: left;
 }
-  
 
 
 /**Page Project**/

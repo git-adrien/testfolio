@@ -8,35 +8,37 @@
 
     <link href="./css/font/stylesheet.css" rel="stylesheet" />
     <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/locomotive-scroll.css" rel="stylesheet" />
+
     
-
-    <title>&#128567 Adrien Sans Pseudo</title>
+    
+    
+    <link rel="icon" type="image/png" href="./images/memojismile.png" />
+    <title> Adrien</title>
 </head>
-<body>
 
-    <!--<div id="loader-wrapper">
-        <div class="loader-section section-top">
-            <h1 style="color: blueviolet;">Web <br> developer <br> From Lyon </h1>
-        </div>
-    </div>-->
-    <nav>
-        <a href="./index.html" class="hovermouse">Adrien Sans Pseudo</a>
+<body  >
+    <nav >
+        <a href="./index.html" class="hovermouse">Adrien</a>
         <div>
             <a href="./about.html" class="hovermouse">About</a>
             <a href="./gallery.html" class="hovermouse">Gallery</a>
             <a href="./lab.html" class="hovermouse">Lab</a>
-            <a target="blank" href="https://www.notion.so/Resume-Fevre-Adrien-a7fd580ef0084b8c8c70a686d0c3e563" class="hovermouse">Resume</a>
+            <!--<a target="blank" href="https://www.notion.so/Resume-Fevre-Adrien-a7fd580ef0084b8c8c70a686d0c3e563" class="hovermouse">Resume</a>-->
         </div>
     </nav>
+
+    <div data-scroll-container >
     
-    <section class=" inside" >
-            <h1>About Me</h1>
+    <section data-scroll-section class=" inside" >
+            <h1 data-scroll data-scroll-speed="4">About Me</h1>
     </section>
-    <section class="content" >
-        <div>
+
+    <section data-scroll-section  class="content" >
+        <div data-scroll data-scroll-speed="2">
             <h2>In the real Life</h2>
         </div>
-        <div>
+        <div data-scroll data-scroll-speed="3">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum faucibus urna nec imperdiet.
                 Cras sit amet iaculis risus. Aenean ac velit felis. Phasellus sit amet magna placerat, sollicitudin mauris vitae,
@@ -46,17 +48,21 @@
                 ante justo commodo risus, in ullamcorper ante diam quis leo. &#128519.&#10084;.
             </p>
         </div>
+    </section>
 
-</section>
-    <footer>
-        <div class="v91_0">Meet up soon ?</div>
-        <div>
+    <footer data-scroll-section >
+        <div data-scroll data-scroll-speed="3" class="v91_0">Meet up soon ?</div>
+        <div data-scroll data-scroll-speed="1">
             <a href="#" class="hovermouse">Dribble</a>
             <a href="#" class="hovermouse">MailTo</a>
             <a href="#" class="hovermouse">Instagram</a>
         </div>        
     </footer>
+
+    </div>
+
     <div class="cursor"></div>
+    <script src="./js/locomotive-scroll.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
