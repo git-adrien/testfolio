@@ -28,12 +28,13 @@ a, nav > span{
   position: absolute;
 }
 
-section,footer{
-  margin: 7vw 5vw; 
-  width: 90vw;
+section, footer {
+  padding: 0 10vw;
+  width: 80vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 4;
 }
 
 
@@ -48,19 +49,19 @@ nav{
   top: 0;
   display: flex;
   justify-content: space-between;
-  padding: 0 5vw;
-  width: 90vw;
+  padding: 20px 10vw;
+  width: 80vw;
   z-index: 1;
 }
 
 nav > div {
   width: 30%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 a, nav > span{
-  font-size: 0.8em;
+  font-size: 1em;
   line-height: 35px;
   font-weight: 400;
   letter-spacing: 0.6px;
@@ -68,7 +69,10 @@ a, nav > span{
 nav a,footer a{
   position: relative;
   text-decoration: none;
-
+}
+nav > a:first-child{
+  font-size: 1.5em;
+  font-family: 'NewYork';
 }
 nav a:hover:after, footer a:hover:after {
   width: 100%;
@@ -90,27 +94,24 @@ nav a:after,footer a:after  {
 footer{
   text-align: center;
   z-index: 1;
-  padding-bottom: 5vh;
+  padding-bottom: cal(8vh+200px);
 }
 
-footer .v91_0{
-  padding: 5% 0 15% 0;
+footer .v91_0 {
+  padding: 0 0 10% 0;
   display: flex;
   justify-content: center;
 }
 
-h1,footer > div:first-child{
+h1,footer .headTxt{
   font-family: 'NewYork';
   font-weight: 100;
   font-style: normal;
-  font-size: 16vw;
+  font-size: 10em;
   opacity: 1;
   text-align: left;
   margin: 0;
   line-height: 0.85;
-}
-footer > div:first-child{
-  font-size: 22vh;
 }
 
 
@@ -123,48 +124,104 @@ footer > div:first-child{
 .hero .v52_5 {
   opacity: 1;
   position: absolute;
-  top: 17%;
-  right: 3%;
+  top: 31%;
+  right: 20vh;
   z-index: -500;
 }
 .v52_5 img{
-  width: 50vw;
+  width: 35vw;
 }
 
 .inside{
+  width: 80vw;
+  min-height: 30vh;
   height: 30vh;
-  margin: 20vh 5vw 10vh 5vw;
-}
-
-.home .content:first-child{
-  min-height: 200vh;
+  padding: 20vh 10vw 10vh 10vw;
 }
 
 .content{
+  min-height: 60vh;
   display: flex;
   flex-direction: row;
+  /*padding: 2vh 0;*/
 }
-.content div:nth-child(1){
-  width: 28%;
-  border-right: 1px solid #8e1515;
-  margin-right: 2%;
+#home .content{
+  align-items: center;
 }
-.content div:nth-child(2){
-  width: 70%;
+.content p,.content_about p{
+  /*border-left: 1px solid #8e1515;*/
+  padding-left: 5%;
+  height: 100%;
 }
-.content h2, .project h2{
+.content h2, .project h2, .content_T2 h2,.content_about h2{
   font-family: 'NewYork';
   font-weight: 100;
-  font-size: 75px;
+  font-size: 55px;
   font-weight: 100;
   letter-spacing: 0.6px;
   margin-top: 15px;
+  margin-right: 5%;
+  text-decoration: wavy;
+  text-decoration-color: #8e1515;
 }
-.content p, .project p{
-  font-size: 28px;
+.content , .content_T2{
+  border-top: #c8dff7 solid 2px;
+  border-bottom: #c8dff7 solid 2px;
+  margin: 50px 0;
+}
+.content p, .project p, .content_about p{
+  font-size: 20px;
   line-height: 1.4;
   letter-spacing: 1px;
   font-weight: 100;
+  padding-top: 4vh;
+}
+
+.content_T2{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:100px 0;
+}
+.content_T2-F{
+  display: flex;
+  flex-direction: row;
+}
+.content_T2-F div{
+  width: 50%;
+}
+.content_T2-3X{
+  display: flex;
+  flex-direction: row;
+}
+.content_T2 div:last-child{
+  margin: auto;
+}
+
+.content_T2 h2{
+  margin: 0;
+}
+
+.content_T2 p{
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
+.clock_content{
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+}
+.clock_content div:first-child{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.clock_content .yearClock{
+  justify-content: center;
 }
 
 .projects{
@@ -178,8 +235,8 @@ footer > div:first-child{
   font-family: 'NewYork';
   font-weight: normal;
   font-style: normal;
-  font-size: 9vw;
-  line-height: 1.2;
+  font-size: 8.1em;;
+  line-height: 1.16;
   letter-spacing: 1px;
   text-decoration: none;
   text-align: center;
@@ -210,6 +267,11 @@ footer > div:first-child{
   text-align: left;
 }
 
+#clock{
+  font-family: "NewYork";
+  font-size: 20em;
+  text-align: center;
+}
 
 /**Page Project**/
 #project{
@@ -225,7 +287,7 @@ footer > div:first-child{
 }
 
 #project h1{
-  font-size: 7.56em;
+  font-size: 6.56em;
   line-height: 0.57em;
   margin-bottom: 0.7em;
 }
@@ -280,6 +342,13 @@ footer > div:first-child{
 
 #projectBG{
   background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  position:fixed;
+  top: 0;
+  z-index: 3;
 }
 
 .imgCursor{
@@ -343,43 +412,43 @@ footer > div:first-child{
 }
 
 .item-1 { 
-  background-image: url('../images/home.png');
+  background-image: url('../images/IMG_0133_2.jpg');
 }
 
 .item-2 { 
-  background-image: url('../images/home.png');
+  background-image: url('../images/IMG_0136_2.jpg');
 }
 
 .item-3 { 
-  background-image: url('../images/home.png');
+  background-image: url('../images/IMG_0133_2.jpg');
 }
 
 .item-4 { 
-  background-image: url('../images/home.png');
+  background-image: url('../images/IMG_0141_2.jpg');
 }
 
 .item-5 { 
-  background-image: url('../images/home.png');
+  background-image: url('../images/IMG_0141_2.jpg');
 }
 
 .item-6 { 
-  background-image: url('../images/home.png');
+  background-image: url('../images/IMG_0144_2.jpg');
 }
 
 .item-7 { 
-  background-image: url('../images/home.png');
+  background-image: url('../images/IMG_0133_2.jpg');
 }
 
 .item-8 { 
-  background-image: url('../images/home.png');
+  background-image: url('../images/IMG_0133_2.jpg');
 }
 
 .item-9 { 
-  background-image: url('../images/home.png');
+  background-image: url('../images/IMG_0136_2.jpg');
 }
 
 .item-10 { 
-  background-image: url('../images/home.png');
+  background-image: url('../images/IMG_0141_2.jpg');
 }
 
 .social{
@@ -390,4 +459,15 @@ footer > div:first-child{
 .social img{
   display: block;
   width: 32px;
+}
+
+
+.content_about{
+  border-top: #c8dff7 solid 2px;
+  display: flex;
+  flex-direction: row;
+  min-height: 40vh;
+}
+.content_about p{
+  padding-top: 0;
 }

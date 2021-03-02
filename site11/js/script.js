@@ -26,6 +26,19 @@ document.addEventListener("mouseover", function( event ){
     }
 })
 
+function update() {
+    clock = document.getElementById("clock") 
+    clock.innerHTML = moment().format('H:mm:ss')
+  }
+  
+  setInterval(update, 1000);
+
+
+  LocalTime = document.getElementById("fuClock") 
+  LocalTime.innerHTML = moment.locale();
+  yearTime = document.getElementById("yearClock") 
+  yearTime.innerHTML = moment().format('YYYY');   ;
+  
 /**
  * document.addEventListener("mouseover", function( event ){
    imgCursor = event.target.classList.contains('hovermouseproject')
