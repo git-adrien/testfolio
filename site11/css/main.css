@@ -129,6 +129,7 @@ footer .headTxt{
   top: 35%;
   right: 10vw;
   z-index: -500;
+  display: none;
 }
 
 .v52_5 img{
