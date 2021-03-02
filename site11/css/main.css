@@ -93,7 +93,7 @@ nav a:after,footer a:after  {
 footer{
   text-align: center;
   z-index: 1;
-  padding-bottom: cal(8vh+200px);
+  padding-bottom: 10vh;
 }
 
 footer .v91_0 {
@@ -106,11 +106,14 @@ h1,footer .headTxt{
   font-family: 'NewYork';
   font-weight: 100;
   font-style: normal;
-  font-size: 10em;
+  font-size: 13em;
   opacity: 1;
   text-align: left;
   margin: 0;
   line-height: 0.85;
+}
+footer .headTxt{
+  font-size: 10em;
 }
 
 
@@ -123,10 +126,11 @@ h1,footer .headTxt{
 .hero .v52_5 {
   opacity: 1;
   position: absolute;
-  top: 31%;
-  right: 20vh;
+  top: 35%;
+  right: 10vw;
   z-index: -500;
 }
+
 .v52_5 img{
   width: 35vw;
 }
@@ -166,7 +170,7 @@ h1,footer .headTxt{
 .content , .content_T2{
   border-top: #c8dff7 solid 2px;
   border-bottom: #c8dff7 solid 2px;
-  margin: 50px 0;
+  margin: 200px 0;
 }
 .content p, .project p, .content_about p{
   font-size: 20px;
@@ -344,7 +348,20 @@ h1,footer .headTxt{
   width: 80vw;
   padding: 0;
   margin: 0 10vw;
+  animation: animatedBackground 0.4s linear;
 }
+
+@keyframes animatedBackground {
+  0% {
+    opacity: 0;
+    left: 100%;
+ }
+ 50%{
+    opacity: 1;
+    left: 0;
+ }
+}
+
 
 .imgCursor{
   height: 60vh;
