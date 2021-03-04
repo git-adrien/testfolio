@@ -19,20 +19,24 @@ document.addEventListener('mousemove', e => {
 
 document.addEventListener("mouseover", function( event ){
    imgCursor = event.target.classList.contains('hovermouseproject')
+   linkBg = event.target
     bg = this.getElementById('projectBG') ;
     if(imgCursor){
         img = event.target.dataset.img
         bg.style.backgroundImage = "url('"+img+"')";
+        linkBg.classList.add("bgPro");
     }
+    
 })
+
+
+
 
 function update() {
     clock = document.getElementById("clock") 
     clock.innerHTML = moment().format('H:mm:ss')
   }
-  
   setInterval(update, 1000);
-
 
   LocalTime = document.getElementById("fuClock") 
   LocalTime.innerHTML = moment.locale();

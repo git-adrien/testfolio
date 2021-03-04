@@ -3,27 +3,30 @@
 
 body{
   margin: 0;
-  color: #c8dff7;
-  background: rgba(0,51,102,1);
+  color: #FAF8F7;
+  background: #05498d;
   font-family: 'Work Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
-
+/*
+  color: #FAF8F7;
+  background: ##05498d;
+*/
 
 .cursor {
-  border-color:#c8dff7;
+  border-color:#FAF8F7;
 }
 a, nav > span{
-  color:#c8dff7;
+  color:#FAF8F7;
 }
 
 
 #loader-wrapper{
   height: 100vh;
   width: 100vw;
-  background: rgba(0,51,102,1);
+  background: #05498d;
   z-index: 15;
   position: absolute;
 }
@@ -169,8 +172,8 @@ footer .headTxt{
   text-decoration-color: #8e1515;
 }
 .content , .content_T2{
-  border-top: #c8dff7 solid 2px;
-  border-bottom: #c8dff7 solid 2px;
+  border-top: #FAF8F7 solid 2px;
+  border-bottom: #FAF8F7 solid 2px;
   margin: 200px 0;
 }
 .content p, .project p, .content_about p{
@@ -249,7 +252,11 @@ footer .headTxt{
 }
 .projects > a:hover{
   z-index: 5;
-  color: #003366;
+  color: #05498d;
+  background: url(https://www.andyhooke.co.uk/wp-content/uploads/2018/02/yellow-brushstroke.png);
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
+  animation: animatedBackground 0.4s linear;
 }
 
 .projects > a::before,
@@ -329,7 +336,7 @@ footer .headTxt{
 .cursor {
   width: 25px;
   height: 25px;
-  border: 1px solid #c8dff7;
+  border: 1px solid #FAF8F7;
   border-radius: 50%;
   position: absolute;
   transition-duration: 100ms;
@@ -351,6 +358,7 @@ footer .headTxt{
   margin: 0 10vw;
   animation: animatedBackground 0.4s linear;
 }
+
 
 @keyframes animatedBackground {
   0% {
@@ -476,7 +484,7 @@ footer .headTxt{
 
 
 .content_about{
-  border-top: #c8dff7 solid 2px;
+  border-top: #FAF8F7 solid 2px;
   display: flex;
   flex-direction: row;
   min-height: 40vh;
