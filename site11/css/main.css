@@ -125,18 +125,19 @@ footer .headTxt{
 .hero{
   height: 100vh;
   margin-top: 0;
+  display: flex;
+  justify-content: space-around;
 }
 .hero .v52_5 {
   opacity: 1;
   position: absolute;
-  top: 35%;
-  right: 10vw;
+  top: 30vh;
+  left: 25vw;
   z-index: -500;
-  display: none;
 }
 
 .v52_5 img{
-  width: 35vw;
+  width: 50vw;
 }
 
 .inside{
@@ -164,7 +165,6 @@ footer .headTxt{
   font-family: 'NewYork';
   font-weight: 100;
   font-size: 55px;
-  font-weight: 100;
   letter-spacing: 0.6px;
   margin-top: 15px;
   margin-right: 5%;
@@ -180,7 +180,7 @@ footer .headTxt{
   font-size: 20px;
   line-height: 1.4;
   letter-spacing: 1px;
-  font-weight: 100;
+  font-weight: 300;
   padding-top: 4vh;
 }
 
@@ -214,7 +214,7 @@ footer .headTxt{
   font-size: 20px;
   line-height: 1.4;
   letter-spacing: 1px;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .clock_content{
@@ -258,6 +258,7 @@ footer .headTxt{
   background-size: 100% 95%;
   animation: animatedBackground 0.4s linear;
 }
+/*https://css-tricks.com/random-numbers-css/*/
 
 .projects > a::before,
 .projects > a::after{
