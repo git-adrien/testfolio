@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400&display=swap');
 
-
 body{
   margin: 0;
   color: #141b24;
@@ -10,10 +9,6 @@ body{
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
-/*
-  color: #141b24;
-  background: ##F4F4F4;
-*/
 
 .cursor {
   border-color:#141b24;
@@ -21,7 +16,6 @@ body{
 a, nav > span{
   color:#141b24;
 }
-
 
 section, footer {
   padding: 0 5vw;
@@ -31,12 +25,10 @@ section, footer {
   justify-content: center;
 }
 
-
 footer > div{
   display: flex;
   justify-content: space-between;
 }
-
 
 nav{
   position: fixed;
@@ -112,8 +104,6 @@ footer .headTxt{
   font-size: 10em;
 }
 
-
-
 /**Page Home**/
 .hero{
   margin-top: 0;
@@ -137,8 +127,6 @@ footer .headTxt{
   text-decoration: none;
 }
 
-
-
 .inside{
   width: 80vw;
   min-height: 30vh;
@@ -148,8 +136,6 @@ footer .headTxt{
 .inside h1{
   font-size: 10em;
 }
-
-
 
 .content_about{
   border-top: #141b24 solid 2px;
