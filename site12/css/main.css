@@ -114,7 +114,6 @@ footer .headTxt{
 }
 .hero span{
   line-height: 2;
-  width: 55%;
   font-family: 'NewYork';
   font-weight: 100;
   font-style: normal;
@@ -125,6 +124,9 @@ footer .headTxt{
 }
 .hero span a{
   text-decoration: none;
+}
+.content_about img{
+  width: 250px;
 }
 
 .inside{
