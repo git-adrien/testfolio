@@ -1,7 +1,8 @@
 
 
 
-  window.transitionToPage = function(href) {
+
+window.transitionToPage = function(href) {
     document.querySelector('body').style.opacity = 0
     setTimeout(function() { 
         //window.open()
@@ -46,6 +47,8 @@ document.addEventListener("mouseover", function( event ){
     }
     
 })
+
+
 
 
 
