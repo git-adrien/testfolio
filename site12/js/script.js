@@ -4,7 +4,8 @@
   window.transitionToPage = function(href) {
     document.querySelector('body').style.opacity = 0
     setTimeout(function() { 
-        window.open(href)
+        //window.open()
+        window.location.href = href
     }, 400)
 }
 
