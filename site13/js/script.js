@@ -2,18 +2,25 @@
 
 
 
-window.transitionToPage = function(href) {
-    document.querySelector('body').style.opacity = 0
-    setTimeout(function() { 
-        //window.open()
-        window.location.href = href
-    }, 400)
+window.transitionToPage = function(e,href) {
+
+    forward = e.classList.contains('forward')
+    
+    if(forward){
+        document.querySelector('body').style.opacity = 0
+        setTimeout(function() { 
+            window.location.href = href
+        }, 400)
+    }else{
+        window.open(href) 
+    }
+
 }
 
 document.addEventListener('DOMContentLoaded', function(event) {
     setTimeout(function() { 
         document.querySelector('body').style.opacity = 1
-    }, 150)
+    }, 400)
 })
 
 
