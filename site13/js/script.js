@@ -1,5 +1,24 @@
 
 
+  window.addEventListener('load', function() {
+
+    fetch('http://localhost:1337/Posts')
+    .then(response => response.json())
+    .then(data => {
+        var Posts = ""
+       data.forEach(element => {
+                Posts += "<div class=\"content_about\"><div><h2 >"+element.title+"</h2></div><div><p>"+element.TLDR+"</p><p><a class='hovermouse forward' href='post/post.html?id="+element.id+"'>C'est partie !!!</a></p></div></div>";
+       });
+        postlist = document.getElementById("postList") 
+        postlist.innerHTML = Posts;
+    });
+
+    setTimeout(function() { 
+        document.querySelector('body').style.opacity = 1
+    }, 400)
+
+
+ }, false);
 
 
 window.transitionToPage = function(e,href) {
@@ -17,17 +36,10 @@ window.transitionToPage = function(e,href) {
 
 }
 
-document.addEventListener('DOMContentLoaded', function(event) {
-    setTimeout(function() { 
-        document.querySelector('body').style.opacity = 1
-    }, 400)
-})
+var url = window.location.pathname;
+var id = url.substring(url.lastIndexOf('/') + 1);
+console.log("id= "+id)
 
-
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
-    smooth: true
-});
 
 const cursor = document.querySelector('.cursor');
 
@@ -55,9 +67,24 @@ document.addEventListener("mouseover", function( event ){
     
 })
 
+function getUrlParameters(parameter, staticURL, decode){
 
+    var currLocation = (staticURL.length)? staticURL : window.location.search,
+        parArr = currLocation.split("?")[1].split("&"),
+        returnBool = true;
 
+    for(var i = 0; i < parArr.length; i++){
+         parr = parArr[i].split("=");
+         if(parr[0] == parameter){
+             return (decode) ? decodeURIComponent(parr[1]) : parr[1];
+             returnBool = true;
+         }else{
+             returnBool = false;            
+         }
+    }
 
+    if(!returnBool) return false;  
+ }
 
 
 function update() {
@@ -72,18 +99,5 @@ function update() {
   yearTime.innerHTML = moment().format('YYYY');   ;
   
   update()
-/**
- * document.addEventListener("mouseover", function( event ){
-   imgCursor = event.target.classList.contains('hovermouseproject')
-    bg = this.getElementById('projectBG') ;
-    if(imgCursor){
-        img = event.target.dataset.img
-        cursor.classList.add("imgCursor");
-        cursor.style.backgroundImage = "url('"+img+"')";
-    }else{
-        img = event.target.dataset.img
-        cursor.classList.remove("imgCursor");
-        cursor.style.backgroundImage = "url('"+img+"')";
-    }
-})
- */
+
+

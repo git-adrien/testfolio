@@ -114,16 +114,13 @@ h1,footer .headTxt{
   font-size: 9.5em;
   opacity: 1;
   text-align: left;
-  margin: 0;
+  margin: 20vh 0;
   line-height: 0.8;
 }
-.hero h2{
-  font-family: 'NewYork';
-  font-weight: 100;
-  font-style: normal;
-  font-size: 7.5em;
-  line-height: 0.3;
+.hero h1{
+  margin: 0;
 }
+
 footer .headTxt{
   font-size: 10em;
 }
@@ -171,6 +168,7 @@ footer .headTxt{
   flex-wrap: wrap;
   min-height: 40vh;
   margin: auto;
+  width: 100%;
 }
 
 .content_about p{
@@ -179,14 +177,13 @@ footer .headTxt{
   letter-spacing: 1px;
   font-weight: 300;
   padding-top: 4vh;
-  padding-top: 0;
 }
 .content_about div:first-child{
-  width: 30%;
+  width: 60%;
 }
 .content_about div:last-child{
-  width: 60%;
-  margin-left: 10%;
+  width: 35%;
+  margin-left: 5%;
 }
 
 .content_about h2 {
@@ -241,6 +238,8 @@ footer .headTxt{
 
 
 #clock{
+  display: none;
+
   font-family: "NewYork";
   font-size: 30em;
   text-align: center;
