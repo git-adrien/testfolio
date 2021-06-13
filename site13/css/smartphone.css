@@ -5,12 +5,30 @@
     #clock{
         display: none;
     }
-    .hero h1 {
-        font-size: 2.5em;
+    h1, footer .headTxt {
+        font-size: 6em;
+        margin: 16vh 0;
     }
-    .hero h2 {
+    .hero h1 {
         font-size: 2em;
-    }   
+        line-height: 1.5;
+    }
+    .hero_bio{
+        flex-wrap: wrap;
+        margin-top: 10vh;
+    }
+    .hero_bio img{
+        display: none;
+    }
+
+    .nav_bio{
+        flex-wrap: wrap;
+    }
+
+    .footer_bio .footerNav{
+        text-align: right;
+    }
+
     .cursor {
         display: none;
     }
