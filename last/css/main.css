@@ -27,8 +27,8 @@ a, nav > span{
 }
 
 section, footer {
-  padding: 0 10vw;
-  width: 80vw;
+  padding: 0 5vw;
+  width: 90vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -202,14 +202,15 @@ footer .headTxt{
   line-height: 1.4;
   letter-spacing: 1px;
   font-weight: 300;
-  padding-top: 4vh;
 }
 .content_about div:first-child{
   width: 60%;
 }
 .content_about div:last-child{
-  width: 35%;
-  margin-left: 5%;
+  width: 34%;
+  padding-left: 5%;
+  margin: 25px 0;
+  border-left: 2px solid black;
 }
 
 .content_about h2 {
