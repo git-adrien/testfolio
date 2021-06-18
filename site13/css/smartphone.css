@@ -15,14 +15,23 @@
     }
     .hero_bio{
         flex-wrap: wrap;
-        margin-top: 10vh;
+        margin-bottom: 10vh;
+        margin-top: 15vh;
+        height: AUTO;
+        position: unset;
     }
+
     .hero_bio img{
         display: none;
     }
 
+    .bio_smartphone{
+        display: block;
+        margin-bottom: 10vh;
+    }
+
     .nav_bio{
-        flex-wrap: wrap;
+        display: none;
     }
 
     .footer_bio .footerNav{
@@ -55,6 +64,9 @@
         width: 100%;
     }
 
+    .footer_bio{
+        display: none;
+    }
 
  @media (max-width: 736px) { 
 

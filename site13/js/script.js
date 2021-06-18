@@ -1,10 +1,19 @@
+//let matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
+matched = false
+if(matched){
+    document.querySelector('body').classList.remove("lightmode");
+    document.querySelector('body').classList.add("darkmode");
+}else{
+    document.querySelector('body').classList.remove("darkmode");
+    document.querySelector('body').classList.add("lightmode");
+}
+
+
 window.addEventListener('load', function() {
 
     setTimeout(function() { 
         document.querySelector('body').style.opacity = 1
     }, 500)
-
-
  }, false);
 
 
@@ -14,8 +23,10 @@ window.transitionToPage = function(e,href) {
     forward = e.classList.contains('forward')
     
     if(forward){
+        //document.querySelector('body').style.backgroundColor = '#003366'
+        cursor.classList.add("expandFull");
         document.querySelector('body').style.opacity = 0
-        setTimeout(function() { 
+        setTimeout(function() {
             window.location.href = href
         }, 500)
     }else{
@@ -40,17 +51,7 @@ document.addEventListener('mousemove', e => {
     
 })
 
-document.addEventListener("mouseover", function( event ){
-   imgCursor = event.target.classList.contains('hovermouseproject')
-   linkBg = event.target
-    bg = this.getElementById('projectBG') ;
-    if(imgCursor){
-        img = event.target.dataset.img
-        bg.style.backgroundImage = "url('"+img+"')";
-        linkBg.classList.add("bgPro");
-    }
-    
-})
+
 
 function Darkmode(){
     if(document.querySelector('body').style.backgroundColor!='black'){
