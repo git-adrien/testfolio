@@ -131,7 +131,7 @@ h1,footer .headTxt{
   margin: 20vh 0;
   line-height: 0.8;
 }
-h1{
+h1,h2{
   background: -webkit-linear-gradient(bottom left,#245d96, #013f7e,#245d96);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -10,7 +10,6 @@ if(matched){
 
 
 window.addEventListener('load', function() {
-
     setTimeout(function() { 
         document.querySelector('body').style.opacity = 1
     }, 500)

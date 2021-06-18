@@ -1,6 +1,6 @@
 window.addEventListener('load', function() {
 
-    fetch('http://localhost:1337/Posts')
+    fetch('http://www.withoutpsd.com:1337/Posts')
     .then(response => response.json())
     .then(data => {
         var Posts = ""

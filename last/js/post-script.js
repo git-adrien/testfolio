@@ -2,7 +2,7 @@ window.addEventListener('load', function() {
 
     var idParameter = getUrlParameters("id", window.location.href, true);
 
-    fetch('http://localhost:1337/Posts/'+idParameter)
+    fetch('http://www.withoutpsd.com:1337/Posts/'+idParameter)
     .then(response => response.json())
     .then(data => {
         var title = data.title
