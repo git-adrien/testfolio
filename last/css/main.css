@@ -8,22 +8,29 @@ body{
   text-rendering: optimizeLegibility;
   opacity: 0;
   transition: opacity .7s;
+  overflow: hidden scroll;
 }
 
 .darkmode{
-  color: #F4F4F4;
+  color: #94999e;
   background: #141b24;
 }
 .lightmode{
   color: #141b24;
   background: #F4F4F4;
 }
-
-.cursor {
+.lightmode a, .lightmode nav > span {
   border-color:#141b24;
 }
-a, nav > span{
-  color:#141b24;
+.darkmode a, .darkmode nav > span {
+  border-color:#94999e;
+}
+
+.darkmode .content_presentation, .darkmode .content_about,.darkmode .content_about div:last-child{
+  border-color: #94999e;
+}
+.lightmode .content_presentation, .lightmode .content_about,.lightmode .content_about div:last-child{
+  border-color: #141b24;
 }
 
 section, footer {
@@ -100,7 +107,7 @@ nav span:after,.content_about span:after , .content_about span:after,footer span
   display: block;
   margin-top: -5px;
   right: 0;
-  background: -webkit-linear-gradient(bottom left,#F4F4F4 5%,#245d96 20% , #003366,#245d96 80%,#F4F4F4 95% );
+  background: -webkit-linear-gradient(bottom left,#3d6996 5%,#245d96 20% , #003366,#245d96 80%,#3d6996 95% );
   transition: width .4s ease;
   -webkit-transition: width .4s ease;
 }
@@ -187,7 +194,7 @@ footer .headTxt{
 }
 
 .content_about{
-  border-top: #141b24 solid 2px;
+  border-top: solid 2px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -210,7 +217,7 @@ footer .headTxt{
   width: 34%;
   padding-left: 5%;
   margin: 25px 0;
-  border-left: 2px solid black;
+  border-left: 2px solid;
 }
 
 .content_about h2 {
@@ -228,7 +235,7 @@ footer .headTxt{
   display: flex;
   justify-content: start;
   min-height: 50vh;
-  border-top: solid #141b24 2px;
+  border-top: solid 2px;
   flex-wrap: wrap;
 }
 .content_presentation div:first-child{
@@ -265,20 +272,6 @@ footer .headTxt{
   justify-content: center;
 }
 
-
-
-#clock{
-  display: none;
-
-  font-family: "NewYork";
-  font-size: 30em;
-  text-align: center;
-  position: absolute;
-  transform: rotate(90deg);
-  top: 30%;
-  left: -20vw;
-  color: white;
-}
 .bio_smartphone{
   display: none;
 }
@@ -301,6 +294,18 @@ footer .headTxt{
   z-index: 5;
 }
 
+.imgCursor{
+  height: 60vh;
+  width: 25vw;
+  margin-left: -12vh;
+  margin-top: -15vw;
+  border-radius: 5px;
+  border: solid #8e1515 1px;
+  transition-duration: 400ms;
+  background-size: cover;
+  z-index: 10;
+}
+
 .expand {
   animation: cursorDownScale 500ms forwards;
   border: solid #c70e0e 1px;
@@ -309,7 +314,9 @@ footer .headTxt{
 }
 
 .expandFull {
-  animation: cursorFullSize 1000ms forwards   ;
+  animation: cursorFullSize 800ms forwards ;
+  -webkit-animation-timing-function: ease-in-out; 
+  animation-timing-function: ease-in-out;
 }
 
 
