@@ -1,4 +1,4 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400&display=swap');*/
+
 @font-face {
   font-family: 'NewYork';
   src: url('./font/NewYork.woff2') format('woff2'),
@@ -165,11 +165,11 @@ h1,footer .headTxt{
   font-family: 'NewYork';
   font-weight: 100;
   font-style: normal;
-  font-size: 9.5em;
+  font-size: 12.2em;
   opacity: 1;
   text-align: left;
   margin: 20vh 0;
-  line-height: 0.8;
+  line-height: 1.1;
 }
 h1,h2,h3{
   background: -webkit-linear-gradient(bottom left,#245d96, #013f7e,#245d96);
