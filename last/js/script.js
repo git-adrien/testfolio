@@ -8,14 +8,11 @@ if(matched){
     document.querySelector('body').classList.add("lightmode");
 }
 
-
 window.addEventListener('load', function() {
     setTimeout(function() { 
         document.querySelector('body').style.opacity = 1
     }, 100)
  }, false);
-
-
 
 window.transitionToPage = function(e,href) {
 
@@ -37,20 +34,6 @@ window.transitionToPage = function(e,href) {
 
 }
 
-
-document.addEventListener("mouseover", function( event ){
-    imgCursor = event.target.classList.contains('bgCursor')
-     if(imgCursor){
-         img = event.target.dataset.img
-         cursor.classList.add("imgCursor");
-         cursor.style.backgroundImage = "url('"+img+"')";
-         console.log(img)
-     }else{
-        cursor.classList.remove("imgCursor");
-     }
-    });
-
-
 const cursor = document.querySelector('.cursor');
 
 document.addEventListener('mousemove', e => {
@@ -64,8 +47,6 @@ document.addEventListener('mousemove', e => {
     }
     
 })
-
-
 
 function Darkmode(){
     if(document.querySelector('body').style.backgroundColor!='black'){

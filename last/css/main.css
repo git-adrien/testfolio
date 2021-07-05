@@ -19,6 +19,12 @@ body{
   color: #141b24;
   background: #F4F4F4;
 }
+.lightmode .cursor{
+  border-color:#141b24;
+}
+.darkmode .cursor{
+  border-color:#94999e;
+}
 .lightmode a, .lightmode nav > span {
   border-color:#141b24;
 }
@@ -32,6 +38,15 @@ body{
 .lightmode .content_presentation, .lightmode .content_about,.lightmode .content_about div:last-child{
   border-color: #141b24;
 }
+
+.lightmode .expandFull {
+  animation: cursorFullSizeLight 800ms forwards ;
+}
+.darkmode .expandFull {
+  animation: cursorFullSizeDark 800ms forwards ;
+}
+
+
 
 section, footer {
   padding: 0 5vw;
@@ -138,7 +153,7 @@ h1,footer .headTxt{
   margin: 20vh 0;
   line-height: 0.8;
 }
-h1,h2{
+h1,h2,h3{
   background: -webkit-linear-gradient(bottom left,#245d96, #013f7e,#245d96);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -258,18 +273,12 @@ footer .headTxt{
     font-weight: 300;
 }
 
-.clock_content{
-  min-height: 50vh;
-  display: flex;
-  flex-direction: column;
+#postPage section{
+  padding: 0 25vw;
+  width: 50vw;
 }
-.clock_content div:first-child{
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-.clock_content .yearClock{
-  justify-content: center;
+#post{
+  margin-bottom: 25vh;
 }
 
 .bio_smartphone{
@@ -314,7 +323,6 @@ footer .headTxt{
 }
 
 .expandFull {
-  animation: cursorFullSize 800ms forwards ;
   -webkit-animation-timing-function: ease-in-out; 
   animation-timing-function: ease-in-out;
 }
@@ -347,7 +355,7 @@ footer .headTxt{
   }
 }
 
-@keyframes cursorFullSize {
+@keyframes cursorFullSizeLight {
   from {
     transform: scale(1);
     background-color: #c70e0e;
@@ -357,5 +365,17 @@ footer .headTxt{
     transform: scale(200);
     background-color: #F4F4F4;
     border: 1px solid #F4F4F4;
+  }
+}
+@keyframes cursorFullSizeDark {
+  from {
+    transform: scale(1);
+    background-color: #c70e0e;
+    border: 1px solid #c70e0e;
+  }
+  to {
+    transform: scale(200);
+    background-color: #141b24;
+    border: 1px solid #141b24;
   }
 }
