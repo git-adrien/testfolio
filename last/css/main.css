@@ -194,7 +194,7 @@ footer .headTxt{
   display: flex;
   align-items: center;
   height: 100vh;
-  position: absolute;
+  /*position: absolute;*/
 }
 .hero span{
   line-height: 1.3;
