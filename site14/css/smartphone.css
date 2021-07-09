@@ -1,0 +1,83 @@
+
+
+
+@media (max-width: 1024px) { 
+    #clock{
+        display: none;
+    }
+    h1, footer .headTxt {
+        font-size: 3em;
+        margin: 16vh 0;
+    }
+    .hero h1 {
+        font-size: 2em;
+        line-height: 1.5;
+    }
+    .hero_bio{
+        flex-wrap: wrap;
+        margin-bottom: 10vh;
+        margin-top: 15vh;
+        height: AUTO;
+        position: unset;
+        justify-content: start;
+    }
+
+    .hero_bio img{
+        display: none;
+    }
+
+    .bio_smartphone{
+        display: block;
+        margin-bottom: 10vh;
+    }
+
+    .nav_bio{
+        display: none;
+    }
+
+    .footer_bio .footerNav{
+        text-align: right;
+    }
+
+    .cursor {
+        display: none;
+    }
+
+    .inside{
+        padding: 0 10vw;
+    }
+
+    .inside h1 {
+        font-size: 3em;
+    }
+    .content_about div:first-child {
+        width: 100%;
+    }
+    .content_about h2 {
+        margin: 15px 0;
+        font-size: 2em;
+    }
+    .content_about p {
+        font-size: 16px;
+    }
+    .content_about span {
+        font-size: 1.1em;
+    }
+    
+    .content_about div:last-child {
+        width: 100%;
+        margin-left: 0;
+        border: none;
+        padding-left:0;
+    }
+
+    .content_presentation div{
+        width: 100%;
+    }
+
+    .footer_bio{
+        display: none;
+    }
+    footer > div:first-child {
+        justify-content: center;
+    }

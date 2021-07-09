@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'NewYork';
+    src: url('NewYork.woff2') format('woff2'),
+        url('NewYork.woff') format('woff'),
+        url('NewYork.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src:url('./Work_Sans/WorkSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
