@@ -3,18 +3,20 @@
 
 body{
   margin: 0;
-  color: #121213;
+  color: #ffffff;
+  background-color: #000000;
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  font-size: 1em;
 }
 
 a{
   font-size: 1.5em;
   font-style: italic;
   text-decoration: none;
-  color: blue;
+  color: rgb(255, 255, 255);
 }
 a:hover{
   text-decoration: underline;
@@ -22,14 +24,14 @@ a:hover{
 
 
 h1{ 
-  font-size: 15em;
+  font-size: 14em;
   margin-top: 0;
   font-family: 'Montserrat', sans-serif;
 }
 
 .content{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin-bottom: 10vh;
   flex-wrap: wrap;
 }
@@ -56,4 +58,5 @@ footer .content{
 footer .item{
   width: 20vw;
   height: 5vw;
+  text-align: center;
 }
