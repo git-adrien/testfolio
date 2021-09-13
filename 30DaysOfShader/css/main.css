@@ -3,8 +3,8 @@
 
 body{
   margin: 0;
-  color: #ffffff;
-  background-color: #000000;
+  color: #000000;
+  background-color: #ffffff;
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -16,7 +16,7 @@ a{
   font-size: 1.5em;
   font-style: italic;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: black;
 }
 a:hover{
   text-decoration: underline;
@@ -28,6 +28,9 @@ h1{
   margin-top: 0;
   font-family: 'Montserrat', sans-serif;
 }
+h2{
+  font-size: 1em; 
+}
 
 .content{
   display: flex;
@@ -37,19 +40,22 @@ h1{
 }
 
 .item{
-  width: 20vw;
-  height: 20vw;
+  width: 350px;
+  height: 350px;
+  position: relative;
 }
-
-.item .imgB{
-  width: 100%;
-  height: 10vw;
-}
-
 .item .imgB img{
-  width: 100%;
-  height: 100%;
+  width: 350px;
+  height: 350px;
   background-size: cover;
+}
+
+.title{
+  transform: rotate(-90deg);
+  bottom: 112px;
+  left: -140px;
+  position: absolute;
+
 }
 
 footer .content{
