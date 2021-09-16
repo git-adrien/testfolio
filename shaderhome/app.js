@@ -1,4 +1,4 @@
-import * as THREE from './node_modules/three'
+import { THREE } from './node_modules/three'
 import fragment from './shaders/fragment.glsl'
 import vertex from './shaders/vertex.glsl'
 import testTexture from './plop2.jpg'

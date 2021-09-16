@@ -1,4 +1,4 @@
-import * as THREE from './node_modules/three'
+import { THREE } from './node_modules/three'
 
 import { TrackballControls } from './node_modules/three/examples/jsm/controls/TrackballControls'
 
