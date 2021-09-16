@@ -27,22 +27,15 @@ function setup() {
         
         noStroke();
         if(bright<63){
-          fill(224, 248, 208);
-        }else if(bright<126){
-          fill(136, 192, 112);
-        }else if(bright<189){
-          fill(52, 104, 86);
-        }else if(bright<255){
           fill(8, 24, 32);
+        }else if(bright<126){
+          fill(52, 104, 86);
+        }else if(bright<189){
+          fill(136, 192, 112);
+        }else if(bright<255){
+          fill(224, 248, 208);
         }
         
-        
-        
-       
-
-        rectMode(CENTER);
-
-   
         rect(x * vScale, y * vScale, vScale-5, vScale-5);
       }
     }
