@@ -2,6 +2,10 @@
 
 var video;
 var vScale = 16;
+var colorPicker1;
+var colorPicker2;
+var colorPicker3;
+var colorPicker4;
 
 function setup() {
     let cnv = createCanvas(2048, 1792);
@@ -9,10 +13,19 @@ function setup() {
     
     video = createCapture(VIDEO);
     video.size(width / vScale, height / vScale);
+
+    colorPicker1 = createColorPicker('#081820');
+    colorPicker1.position(0, height + 5);
+    colorPicker2 = createColorPicker('#346856');
+    colorPicker2.position(0, height + 25);
+    colorPicker3 = createColorPicker('#88c070');
+    colorPicker3.position(0, height + 45);
+    colorPicker4 = createColorPicker('#e0f8d0');
+    colorPicker4.position(0, height + 65);
   }
   
   function draw() {
-    background(255)
+    background(255);
     video.loadPixels();
     for (var y = 0; y < video.height; y++) {
       for (var x = 0; x < video.width; x++) {
@@ -27,13 +40,13 @@ function setup() {
         
         noStroke();
         if(bright<63){
-          fill(8, 24, 32);
+          fill(colorPicker1.color());
         }else if(bright<126){
-          fill(52, 104, 86);
+          fill(colorPicker2.color());
         }else if(bright<189){
-          fill(136, 192, 112);
+          fill(colorPicker3.color());
         }else if(bright<255){
-          fill(224, 248, 208);
+          fill(colorPicker4.color());
         }
         
         rect(x * vScale, y * vScale, vScale-5, vScale-5);
