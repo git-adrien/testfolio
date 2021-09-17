@@ -2,7 +2,7 @@ import * as THREE from './node_modules/three'
 
 import { TrackballControls } from './node_modules/three/examples/jsm/controls/TrackballControls'
 
-import fragment from './shaders/fragment.glsl'
+import { fragment } from './shaders/fragment.glsl'
 import vertex from './shaders/vertex.glsl'
 import testTexture2 from './plop2.jpg'
 //import testTexture2 from './plop2.jpeg'
