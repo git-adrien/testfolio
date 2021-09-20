@@ -1,4 +1,4 @@
-import * as THREE from './node_modules/three'
+import * as THREE from 'three'
 
 import fragment  from './shaders/fragment.glsl'
 import vertex from './shaders/vertex.glsl'
@@ -70,5 +70,5 @@ export default class Sketch {
 }
 
 new Sketch({
-  domElement: document.getElementById('container'),
+  domElement: document.getElementById('app'),
 })

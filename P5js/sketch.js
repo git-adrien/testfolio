@@ -12,6 +12,8 @@ function setup() {
     pixelDensity(1);
     
     video = createCapture(VIDEO);
+
+    
     video.size(width / vScale, height / vScale);
 
     colorPicker1 = createColorPicker('#081820');

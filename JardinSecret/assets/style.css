@@ -1,0 +1,309 @@
+
+@font-face {
+    font-family: 'redaction';
+    src: url('./font/redaction/Redaction_2_001/webfonts/Redaction-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'NewYork';
+    src: url('./font/NewYork/NewYork.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+  #app{
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+  }
+  
+  body{
+    margin: 0;
+    font-family: 'roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    opacity: 0;
+    font-size: 14px;
+    transition: opacity .7s;
+    overflow: hidden scroll;
+    background-color: transparent;
+    color: #343C46;
+    
+  }
+  
+  
+  
+  
+  section, footer {
+    padding: 0 5vw;
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  footer h2{
+    display: flex;
+    justify-content: center;
+  }
+  footer div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  
+  
+  nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5vw;
+    width: 90vw;
+    z-index: 1;
+  }
+  
+  nav > div {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .nav_bio{
+    justify-content: space-between;
+  }
+  
+  
+  a, nav > span, .content_about span, footer span, .nav_bio span,.link_bio span{
+    font-size: 1em;
+    line-height: 35px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+  }
+  nav span,footer a,.content_about span,footer span,.link_bio span{
+    position: relative;
+    text-decoration: none;
+  }
+  nav > span:first-child{
+    font-size: 1.5em;
+    font-family: 'redaction';
+  }
+  nav span:hover:after, .content_about span:hover:after, .content_about span:hover:after,footer span:hover:after,.link_bio span:hover:after{
+    width: 100%;
+    left: 0;
+  }
+  nav span:after,.content_about span:after , .content_about span:after,footer span:after,.link_bio span:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: -5px;
+    right: 0;
+    background: -webkit-linear-gradient(bottom left,#3d6996 5%,#245d96 20% , #003366,#245d96 80%,#3d6996 95% );
+    transition: width .4s ease;
+    -webkit-transition: width .4s ease;
+  }
+  
+  
+  h1,footer h2{
+    font-family: 'redaction';
+    font-size: 10em;
+    opacity: 1;
+    text-align: left;
+
+  }
+
+  h1{
+      margin: 0;
+      font-size: 7em;
+  }
+
+  .align-left{
+      text-align: end;
+      font-size: 9em;
+  }
+  .font-NY{
+      font-family: 'NewYork';
+  }
+  .font-Mont{
+      font-family: 'Montserrat';
+  }
+  
+  
+  /**Page Home**/
+  .hero{
+    height: 85vh;
+    padding: 5vh 5vw;
+    justify-content: space-between;
+  }
+
+  .hero span a{
+    text-decoration: none;
+  }
+  .hero_bio{
+    flex-direction: row;
+  }
+  .content_about img{
+    width: 250px;
+  }
+  
+  /** Project **/
+
+  .project span{
+    font-size: 5em;
+    font-family: 'redaction';
+  }
+  .project span:hover{
+    color:black;
+  }
+  .project span:nth-child(even){
+    text-align: right;
+  }
+  
+  
+  
+  
+  /**Custom cursor**/
+  .hovermouse{
+    cursor: none;
+  }
+  .cursor {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #141b24;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 100ms;
+    transition-timing-function: ease-out;
+    pointer-events: none;
+    z-index: 5;
+  }
+  
+  .imgCursor{
+    height: 60vh;
+    width: 25vw;
+    margin-left: -12vh;
+    margin-top: -15vw;
+    border-radius: 5px;
+    border: solid #8e1515 1px;
+    transition-duration: 400ms;
+    background-size: cover;
+    z-index: 10;
+  }
+  
+  .expand {
+    animation: cursorDownScale 500ms forwards;
+    border: none;
+    background: #c70e0e;
+    transition-duration: 400ms;
+  }
+  
+  .expandFull {
+    -webkit-animation-timing-function: ease-in-out; 
+    animation-timing-function: ease-in-out;
+  }
+  
+  
+  .cursor_click{
+    animation: cursorDownScale 300ms ;
+    background-color: #c70e0e;
+    width: 25px;
+    height: 25px;
+    border: none;
+    transition-duration: 300ms;
+  }
+  
+  
+  @keyframes cursorUpScale {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
+  }
+  @keyframes cursorDownScale {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(-0.5);
+    }
+  }
+  
+  @keyframes cursorFullSizeLight {
+    from {
+      transform: scale(1);
+      background-color: #c70e0e;
+      border: 1px solid #c70e0e;
+    }
+    to {
+      transform: scale(200);
+      background-color: #F4F4F4;
+      border: 1px solid #F4F4F4;
+    }
+  }
+  @keyframes cursorFullSizeDark {
+    from {
+      transform: scale(1);
+      background-color: #c70e0e;
+      border: 1px solid #c70e0e;
+    }
+    to {
+      transform: scale(200);
+      background-color: #141b24;
+      border: 1px solid #141b24;
+    }
+  }
+  
+  
+  
+  
+  
+  @media (max-width: 768px) { 
+    #clock{
+        display: none;
+    }
+    h1, footer h2{
+        font-size: 3em;
+        margin: 16vh 0;
+    }
+    .hero h1 {
+        font-size: 2em;
+        line-height: 1.5;
+        flex-wrap: wrap;
+        margin-bottom: 2vh;
+        margin-top: 0vh;
+        height: AUTO;
+        position: unset;
+        justify-content: start;
+    }
+  
+    .project span {
+        font-size: 2em;
+        font-family: 'redaction';
+        margin: 5vh 0;
+    }
+  
+    .cursor {
+        display: none;
+    }
+  
+    .inside{
+        padding: 0 10vw;
+    }
+  
+    footer > div:first-child {
+        justify-content: center;
+    }
+  }
