@@ -13,7 +13,6 @@
     font-style: normal;
     font-display: swap;
   }
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
   #app{
       width: 100vw;
@@ -51,15 +50,27 @@
     position: relative;
     z-index: 1;
   }
+  footer{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+  }
   
   footer h2{
+    font-size: 18em;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    margin: 0;
   }
+  footer span{
+    font-size: 4em;
+    line-height: 2;
+  }
+
   footer div{
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    justify-content: center;
+    flex-direction: column;
   }
   
   
@@ -82,36 +93,10 @@
     justify-content: space-between;
   }
   
-  
-  a, nav > span, .content_about span, footer span, .nav_bio span,.link_bio span{
-    font-size: 1em;
-    line-height: 35px;
-    font-weight: 400;
-    letter-spacing: 0.6px;
-  }
-  nav span,footer a,.content_about span,footer span,.link_bio span{
-    position: relative;
-    text-decoration: none;
-  }
-  nav > span:first-child{
-    font-size: 1.5em;
-    font-family: 'redaction';
-  }
-  nav span:hover:after, .content_about span:hover:after, .content_about span:hover:after,footer span:hover:after,.link_bio span:hover:after{
-    width: 100%;
-    left: 0;
-  }
-  nav span:after,.content_about span:after , .content_about span:after,footer span:after,.link_bio span:after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    display: block;
-    margin-top: -5px;
-    right: 0;
-    background: -webkit-linear-gradient(bottom left,#3d6996 5%,#245d96 20% , #003366,#245d96 80%,#3d6996 95% );
-    transition: width .4s ease;
-    -webkit-transition: width .4s ease;
+ 
+  footer span{
+    font-size: 4em;
+    line-height: 2;
   }
   
   
@@ -120,7 +105,12 @@
     font-size: 10em;
     opacity: 1;
     text-align: left;
-
+  }
+  footer h2{
+    font-size: 18em;
+    display: flex;
+    justify-content: left;
+    line-height: 0.8em;
   }
 
   h1{
@@ -130,7 +120,9 @@
 
   .align-left{
       text-align: end;
-      font-size: 9em;
+      font-size: 12.7em;
+      margin-top: -0.3em;
+      line-height: 0.8em;
   }
   .font-NY{
       font-family: 'NewYork';
@@ -146,6 +138,9 @@
     padding: 5vh 5vw;
     justify-content: space-between;
   }
+  .hero h2{
+    font-size: 3em;
+  }
 
   .hero span a{
     text-decoration: none;
@@ -160,19 +155,14 @@
   /** Project **/
 
   .project span{
-    font-size: 5em;
-    font-family: 'redaction';
+    font-size: 6em;
+  
   }
   .project span:hover{
     color:black;
   }
-  .project span:nth-child(even){
-    text-align: right;
-  }
   
-  
-  
-  
+
   /**Custom cursor**/
   .hovermouse{
     cursor: none;
@@ -269,7 +259,6 @@
   
   
   
-  
   @media (max-width: 768px) { 
     #clock{
         display: none;
@@ -305,5 +294,19 @@
   
     footer > div:first-child {
         justify-content: center;
+    }
+  }
+
+    
+  @media (min-width: 1568px) { 
+    .hero{
+      padding: 5vh 20vw;
+    }
+    .align-left{
+      margin-top: 0px;
+    }
+    section, footer {
+      padding: 0 20vw;
+      width: 60vw;
     }
   }
