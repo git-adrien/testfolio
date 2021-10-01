@@ -1,3 +1,5 @@
+import './assets/style.css/'
+
 let matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
 matched = false
 if(matched){
@@ -12,7 +14,7 @@ window.addEventListener('load', function() {
     setTimeout(function() { 
         document.querySelector('body').style.opacity = 1
     }, 100)
- }, false);
+ }, false); 
 
 window.transitionToPage = function(e,href) {
 
